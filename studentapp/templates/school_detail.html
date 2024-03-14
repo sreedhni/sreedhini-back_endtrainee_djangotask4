@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>School Detail</title>
+</head>
+<body>
+    <h1>School Detail (function based view)</h1>
+    {% if school %}
+        <p><strong>School Name:</strong> {{ school.school_name }}</p>
+        <p><strong>School Code:</strong> {{ school.school_code }}</p>
+        <p><strong>Principal:</strong> {{ school.principal }}</p>
+        <p><strong>Total Students:</strong> {{ school.total_students }}</p>
+    {% else %}
+        <p>No school found with the specified ID.</p>
+    {% endif %}
+</body>
+</html>
